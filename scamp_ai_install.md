@@ -56,6 +56,13 @@ https://piai.local:9443/#!/home
 
     1. sudo docker run -d -p 3000:8080 -e OLLAMA_BASE_URL=http://jetai:11434 -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 
+## Update to latest open-webui version
+
+    1. Open portaner (Oruse docker via cli)
+    2. Stop the open-webui container, And remove the container
+    3. Remove the open-webui image
+    4. sudo docker run -d -p 3000:8080 -e OLLAMA_BASE_URL=http://jetai:11434 -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+
 ## or specific open-webui version
 
     1. docker rm -f open-webui
